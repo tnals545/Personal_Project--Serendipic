@@ -36,7 +36,7 @@
 ```shell
 
 # 프로젝트 clone
-$ git clone https://github.com/wanted-pre-onboarding-frontend-team4/pre-onboarding-8th-3-4.git
+$ git clone https://github.com/tnals545/Personal_Project--Serendipic.git
 
 # npm 설치
 $ npm install
