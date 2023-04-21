@@ -11,12 +11,10 @@ import alertSlice, { type AlertState } from "@/store/slice/alertSlice";
 import keywordDataSlice, {
   type KeywordDataState,
 } from "@/store/slice/keywordDataSlice";
-import { TestState, testApi } from "@/api/testApi";
 
 export interface RootState {
   alert: AlertState;
   keyword: KeywordDataState;
-  test: TestState;
 }
 
 const RootReducer = (
@@ -28,7 +26,6 @@ const RootReducer = (
   const combinedReducer = combineReducers({
     alert: alertSlice.reducer,
     keyword: keywordDataSlice.reducer,
-    test: testApi.reducer,
   });
 
   return combinedReducer(state, action);
