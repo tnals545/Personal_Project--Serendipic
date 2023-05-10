@@ -1,3 +1,4 @@
+import Head from "next/head";
 import type { AppProps } from "next/app";
 import { Provider } from "react-redux";
 
@@ -10,6 +11,9 @@ function App({ Component, pageProps }: AppProps) {
 
   return (
     <Provider store={store}>
+      <Head>
+        <title>Serendipic</title>
+      </Head>
       <GlobalStyle />
       <Component {...props.pageprops} />
     </Provider>
