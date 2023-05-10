@@ -9,7 +9,7 @@ const initialState: AlertState = {
 };
 
 const alertSlice = createSlice({
-  name: "Alert",
+  name: "alert",
   initialState,
   reducers: {
     alertStatus: (state, action: PayloadAction<string | number | null>) => {
