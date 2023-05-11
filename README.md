@@ -191,17 +191,7 @@ src
 
 - 개선사항 및 추가기능
 
-  - 개선사항
-
-    - ❌ API 호출시 로딩 시간 동안 배경 이미지가 사라지는 현상 (예정)
-
-      ![serendipic](https://user-images.githubusercontent.com/92634711/232376698-9db0df26-4027-4378-9be0-a00d7b1961b3.gif)
-
-    <br />
-
-    - ❌ 사용자가 입력했던 키워드 데이터 저장 안됨 (예정)
-
-    <br />
+  - [개선사항 wiki 바로가기](https://github.com/tnals545/Personal_Project--Serendipic/wiki/%EA%B0%9C%EC%84%A0%EC%82%AC%ED%95%AD)
 
   - 추가기능
 
