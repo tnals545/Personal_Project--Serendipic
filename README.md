@@ -62,7 +62,7 @@ npm start
   <br />
   <div markdown="1">
 
-  ![keyword_search](https://user-images.githubusercontent.com/92634711/232393695-f37c8eec-58d3-43ae-bfb3-a299313408c4.gif)
+![keyword_search](https://user-images.githubusercontent.com/92634711/232393695-f37c8eec-58d3-43ae-bfb3-a299313408c4.gif)
 
   </div>
 </details>
@@ -76,7 +76,7 @@ npm start
   <br />
   <div markdown="2">
 
-  ![typing_effect](https://user-images.githubusercontent.com/92634711/232388454-77b6386b-5bc0-4fe2-a57e-952aebbbede0.gif)
+![typing_effect](https://user-images.githubusercontent.com/92634711/232388454-77b6386b-5bc0-4fe2-a57e-952aebbbede0.gif)
 
   </div>
 </details>
@@ -86,7 +86,7 @@ npm start
   <br />
   <div markdown="3">
 
-  ![prev_keyword](https://user-images.githubusercontent.com/92634711/232394025-0a81d290-91c9-41ec-bd1d-7a070ba6f62e.gif)
+![prev_keyword](https://user-images.githubusercontent.com/92634711/232394025-0a81d290-91c9-41ec-bd1d-7a070ba6f62e.gif)
 
   </div>
 </details>
@@ -96,7 +96,7 @@ npm start
   <br />
   <div markdown="4">
 
-  ![alert](https://user-images.githubusercontent.com/92634711/232393367-f1606435-6a61-498d-b4bd-40b903bc3160.gif)
+![alert](https://user-images.githubusercontent.com/92634711/232393367-f1606435-6a61-498d-b4bd-40b903bc3160.gif)
 
   </div>
 </details>
@@ -164,20 +164,21 @@ src
 <br />
 
 ## 6. 기술스택
-  
-  - 프론트엔드
 
-    <img alt="nextdotjs" src ="https://img.shields.io/badge/next.js-000000.svg?&style=for-the-badge&logo=nextdotjs&logoColor=white"/>
-    <img alt="redux" src ="https://img.shields.io/badge/redux-764ABC.svg?&style=for-the-badge&logo=redux&logoColor=white"/>
-    <img alt="typescript" src ="https://img.shields.io/badge/typescript-3178C6.svg?&style=for-the-badge&logo=typescript&logoColor=white"/>
-    <img alt="Html" src ="https://img.shields.io/badge/HTML5-E34F26.svg?&style=for-the-badge&logo=HTML5&logoColor=white"/>
-    <img alt="Css" src ="https://img.shields.io/badge/CSS3-1572B6.svg?&style=for-the-badge&logo=CSS3&logoColor=white"/>
-    <img alt="javascript" src ="https://img.shields.io/badge/javascript-F7DF1E.svg?&style=for-the-badge&logo=javascript&logoColor=black"/>
+- 프론트엔드
+
+  <img alt="nextdotjs" src ="https://img.shields.io/badge/next.js-000000.svg?&style=for-the-badge&logo=nextdotjs&logoColor=white"/>
+  <img alt="redux" src ="https://img.shields.io/badge/redux-764ABC.svg?&style=for-the-badge&logo=redux&logoColor=white"/>
+  <img alt="typescript" src ="https://img.shields.io/badge/typescript-3178C6.svg?&style=for-the-badge&logo=typescript&logoColor=white"/>
+  <img alt="Html" src ="https://img.shields.io/badge/HTML5-E34F26.svg?&style=for-the-badge&logo=HTML5&logoColor=white"/>
+  <img alt="Css" src ="https://img.shields.io/badge/CSS3-1572B6.svg?&style=for-the-badge&logo=CSS3&logoColor=white"/>
+  <img alt="javascript" src ="https://img.shields.io/badge/javascript-F7DF1E.svg?&style=for-the-badge&logo=javascript&logoColor=black"/>
 
 <br />
 <br />
 
 ## 7. 회고
+
 - 반응형 웹사이트를 만들기 위한 기초를 다질 수 있는 프로젝트 경험이었다.
 - 프로젝트를 기획했던 기능과 디자인 및 UI를 구현하여 만족스러운 결과를 얻었다고 생각한다.
 - 물론 프로젝트를 구현하면서 기획 당시에는 생각하지 못했던 부분이 있었는데, 이처럼 개선사항이 생기거나 새로운 아이디어가 떠올라 기능을 추가해야 한다면 추후에 수정하여 프로젝트를 업데이트할 예정이다.
@@ -187,22 +188,23 @@ src
 <br />
 
 ## 8. 개선사항 및 추가기능
+
 - 개선사항 및 추가기능
 
   - 개선사항
-    
+
     - ❌ API 호출시 로딩 시간 동안 배경 이미지가 사라지는 현상 (예정)
-  
+
       ![serendipic](https://user-images.githubusercontent.com/92634711/232376698-9db0df26-4027-4378-9be0-a00d7b1961b3.gif)
-    
+
     <br />
-    
+
     - ❌ 사용자가 입력했던 키워드 데이터 저장 안됨 (예정)
 
     <br />
 
   - 추가기능
-    
+
     - 서버와 DB를 추가하여 회원기능 추가 (예정)
 
 <br />

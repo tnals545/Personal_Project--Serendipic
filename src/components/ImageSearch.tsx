@@ -3,15 +3,16 @@ import styled from "styled-components";
 import { useDispatch } from "react-redux";
 
 import makeColor from "@/common/makeColor";
-import { getImgInfo } from "@/api/main";
 import { alertStatus } from "@/store/slice/alertSlice";
-import { addColor, addKeyword } from "@/store/slice/keywordDataSlice";
-import { useAppSelector } from "@/common/hooks/useAppSelector";
+import {
+  addColor,
+  addKeyword,
+  updateSearchKeyword,
+} from "@/store/slice/keywordDataSlice";
 
 const ImageSearch = () => {
   const keywordInputRef = useRef<HTMLInputElement>(null);
 
-  const keywordList = useAppSelector((state) => state.keyword?.keywordList);
   const dispatch = useDispatch();
 
   const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -38,6 +39,7 @@ const ImageSearch = () => {
 
       if (!value) return;
 
+      dispatch(updateSearchKeyword(value));
       dispatch(addKeyword(value));
 
       keywordInputRef.current.value = "";
@@ -46,19 +48,7 @@ const ImageSearch = () => {
 
   useEffect(() => {
     keywordInputRef.current?.focus();
-
-    const timeoutImg = setTimeout(async () => {
-      await getImgInfo(keywordList[0]).catch((err) => {
-        if (err.response.status === 404) {
-          dispatch(alertStatus(err.response.status));
-        }
-      });
-    }, 500);
-
-    return () => {
-      clearTimeout(timeoutImg);
-    };
-  }, [keywordList, dispatch]);
+  }, []);
 
   return (
     <form onSubmit={handleOnSubmit}>
