@@ -3,15 +3,17 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 export interface KeywordDataState {
   colorList: string[];
   keywordList: string[];
+  searchKeyword: string;
 }
 
 const initialState: KeywordDataState = {
   colorList: [],
   keywordList: [],
+  searchKeyword: "nature",
 };
 
 const keywordDataSlice = createSlice({
-  name: "Keyword",
+  name: "keyword",
   initialState,
   reducers: {
     addColor: (state, action: PayloadAction<string>) => {
@@ -30,8 +32,12 @@ const keywordDataSlice = createSlice({
         state.keywordList = [action.payload, ...newList];
       }
     },
+    updateSearchKeyword: (state, action: PayloadAction<string>) => {
+      state.searchKeyword = action.payload;
+    },
   },
 });
 
-export const { addColor, addKeyword } = keywordDataSlice.actions;
+export const { addColor, addKeyword, updateSearchKeyword } =
+  keywordDataSlice.actions;
 export default keywordDataSlice;

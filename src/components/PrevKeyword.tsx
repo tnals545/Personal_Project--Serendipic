@@ -1,26 +1,29 @@
 import styled from "styled-components";
 import { useDispatch } from "react-redux";
 
-import { getImgInfo } from "@/api/main";
-import { alertStatus } from "@/store/slice/alertSlice";
+import { useGetImageByKeywordQuery } from "@/api/serendipicApi";
 import { useAppSelector } from "@/common/hooks/useAppSelector";
+import { KeywordImageType } from "@/components/KeywordImage";
+import { updateSearchKeyword } from "@/store/slice/keywordDataSlice";
+import { alertStatus } from "@/store/slice/alertSlice";
 
 const PrevKeyword = () => {
   const keywordList = useAppSelector((state) => state.keyword?.keywordList);
   const colorList = useAppSelector((state) => state.keyword?.colorList);
+  const nowKeyword = useAppSelector((state) => state.keyword.searchKeyword);
 
   const dispatch = useDispatch();
 
-  const handlePrevKeywordClick = async (
-    e: React.MouseEvent<HTMLButtonElement>
-  ) => {
+  const { error } = useGetImageByKeywordQuery(nowKeyword) as KeywordImageType;
+
+  const handlePrevKeywordClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     const { value } = e.currentTarget;
 
-    await getImgInfo(value).catch((err) => {
-      if (err.response.status === 404) {
-        dispatch(alertStatus(err.response.status));
-      }
-    });
+    dispatch(updateSearchKeyword(value));
+
+    if (error?.status === 404) {
+      dispatch(alertStatus(error.status));
+    }
   };
 
   return (

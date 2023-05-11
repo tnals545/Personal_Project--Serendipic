@@ -19,6 +19,11 @@ export const GlobalStyle = createGlobalStyle`
       box-sizing: border-box;
     }
 
+    body {
+      background-color: black;
+      overflow: hidden;
+    }
+
     input, textarea { 
       -moz-user-select: auto;
       -webkit-user-select: auto;
@@ -40,14 +45,6 @@ export const GlobalStyle = createGlobalStyle`
       cursor: pointer;
     }
 
-    body {
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      background-attachment: fixed;
-      background-color: black;
-    }
-
     content-visibility : auto;
 
     header {
@@ -66,5 +63,13 @@ export const GlobalStyle = createGlobalStyle`
       width: 100%;
       height: 10vmin;
       position: relative;
+    }
+
+    &.bg-img {
+      object-fit: cover;
+    }
+
+    &.blur {
+      filter: blur(1.5rem);
     }
 `;
